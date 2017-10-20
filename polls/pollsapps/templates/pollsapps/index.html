@@ -1,0 +1,13 @@
+{% load static %}
+<body id=index>
+<link rel="stylesheet" type="text/css" href="{% static 'admin/css/style.css' %}" />
+{% if latest_question_list %}
+<ul>
+{% for question in latest_question_list %}
+<li><a href="{% url 'pollsapps:detail' question.id %}">{{ question.question_text }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
+</body>

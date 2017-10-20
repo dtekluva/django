@@ -1,0 +1,6 @@
+li a, #list {
+    color: rgb(0, 41, 128);
+}
+body {
+    background: white url("images/back2.gif") no-repeat right bottom;
+}
