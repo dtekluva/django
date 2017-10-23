@@ -11,11 +11,11 @@ class UserAccountForm(forms.ModelForm):
         fields = ('phone', 'occupation')
 
 class UserRegistrationForm(forms.ModelForm):
-    username = forms.CharField(max_length=256)
+    username = forms.CharField(max_length=256, widget=forms.TextInput())
     first_name = forms.CharField(max_length=256)
     last_name = forms.CharField(max_length=256)
-    email = forms.CharField(max_length=256)
-    password = forms.CharField(max_length=256)
+    email = forms.CharField(max_length=256, widget=forms.EmailInput())
+    password = forms.CharField(max_length=256, widget=forms.PasswordInput())
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password')
