@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ANIMATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+        
+            body{
+                margin: 0;
+                height: 100vh;
+                
+                background: #dee9ba;
+            }
+            .balldiv{
+                margin: 0 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #dee9ba; 
+            }
+            .ball{
+                width:200px;
+                height: 200px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #bada55;
+                transition: all 1s cubic-bezier(0, 0.82, 0.76, 0.33);
+            }
+            .ball:hover{
+                background: greenyellow;
+                border-radius: 100px;
+                color: orange;
+                letter-spacing: 5px;
+                transform: scale(1.2);
+            }
+
+            .circle{
+                width:100px;
+                height: 100px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(236, 187, 113);
+                transition: all 1s cubic-bezier(0, 0.82, 0.76, 0.33);
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .c_parent:hover .circle{
+                transform: translateX(100vh)
+            }
+
+            .circle:nth-child(1){
+                transition: all 1s ease;
+            }
+
+            .circle:nth-child(2){
+                transition: all 1s ease-in;
+            }
+
+            .circle:nth-child(3){
+                transition: all 1s ease-in-out;
+            }
+
+            .circle:nth-child(4){
+                transition: all 1s ease-out;
+            }
+
+        </style>
+        
+
+    </head>
+    <body>
+          <div class="balldiv">  
+            <div class="ball">
+                BALL
+            </div>
+            <div class="ball">
+                BALL
+            </div>
+            <div class="ball">
+                BALL
+            </div>
+            <div class="ball">
+                BALL
+            </div>
+        </div>
+        <div class="c_parent">
+            <div class="circle">
+                1
+            </div>
+            <div class="circle">
+                   2 
+            </div>
+            <div class="circle">
+                   3 
+            </div>
+            <div class="circle">
+                   4 
+            </div>
+        </div>
+    </body>
+</html>

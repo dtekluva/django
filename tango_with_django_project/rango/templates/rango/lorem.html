@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+
+		<title>Portfilio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'rango/assets/css/main.css' %}" />
+		
+	</head>
+		
+	<body>
+		
+		<!--navigation-->
+
+		
+		
+		<!--inline elements-->
+		<header>
+			<!--nav for navigation-->
+			<nav >
+				<ul class="navlist">
+					<li id="logo">
+							<a href="/rango/">RANGO --main</a>
+					</li>
+					<li class="navDesktop">
+						<ul class="navitems">
+							<LI>
+								<a href="#">IMAGES</a>
+							</LI>
+
+							<li>
+								<a href="float.html">PROJECTS</a>
+								
+							</li>
+
+							<li>
+								<a href="/rango/about/">ABOUT</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="hamburger">
+						<a href="#" /a>&#8801;</a>
+					</li>
+			</nav>
+		</header>
+		<!--main contents stay here-->
+		<main>
+			<section class="banner">
+				<div class= "overlay">
+					<h3>{{ boldmessage }}</h3>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class= "row">
+
+						<div class="column">
+							<!--boxcomes in here-->
+							<div class="box">
+									<div class="circle">
+										<p>{{ boldmessage }}</p>
+											<!--circle comes in here-->
+									</div>	
+								
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="box">
+								<div class="circle">
+									<p>{{ second }}</p>	
+									<!--circle comes in here-->
+								</div>	
+										
+							</div>
+								<!--boxcomes in here-->
+						</div>
+
+						<div class="column">
+							<div class="box">
+								<div class="circle">
+									<p>{{ third }}</p>	
+											<!--circle comes in here-->
+								</div>	
+										
+							</div>
+
+						</div>
+					</div>
+
+					<div class= "row">
+							
+						<div class="column">
+							<!--boxcomes in here-->
+							<div class="box">
+								<div class="circle">
+										4	
+											<!--circle comes in here-->
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="box">
+								<div class="circle">
+									5	
+											<!--circle comes in here-->
+								</div>	
+										
+							</div>
+								<!--boxcomes in here-->
+						</div>
+
+						<div class="column">
+							<div class="box">
+								<div class="circle">
+									6	
+											<!--circle comes in here-->
+								</div>	
+										
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!--footer stays here-->
+		<footer class="footer">
+			<div>
+				<p>&copy; univelcity 2017</p>
+			</div>
+		</footer>
+	</body>
+</html>

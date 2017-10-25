@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'rango/style.css' %}" />
+<html>
+
+    <head>
+        <title>Rango</title>
+       
+    </head>
+
+    <body>
+        <h1>
+            Rango man says...click ther button below to visit lorem
+        </h1>
+
+        <button>
+            <a href="/rango/lorem/">LOREM</a>
+        </button>
+
+        hello world! <strong>{{ boldmessage }}</strong><br />
+        <img src="{% static "/rango/images/rango.jpg" %}" alt="Picture of Rango" />
+        <a href="/rango/about/">About</a><br />
+    </body>
+
+</html>

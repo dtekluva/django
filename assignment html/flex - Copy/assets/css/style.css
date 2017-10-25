@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(177, 160, 160);
+}
+li{
+    list-style-type: none;
+}
+nav{
+    background: grey;
+    width: 96.5%;
+    justify-content: center;
+    display: flex;
+    padding: 25px;
+    margin-left: 13px;
+    margin-top: 13px;
+    
+}
+header{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display:flex;
+}
+span{
+    padding: 50%;
+}
+.banner{
+    background: grey;
+    width: 96.5%;
+    height: 350px;
+    justify-content: center;
+    display: flex;
+    padding: 150px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+}
+.container{
+    width: 96.5%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.column{
+    flex: 0 0 calc(100%/4);
+    padding:15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    background: grey;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+.container2{
+    width: 96.5%;
+    height:443px;
+    margin: 0 auto;
+    padding: 0px 0;
+    display: flex;
+}
+#main1{
+    flex: 6;
+    width: 100%;
+    height: 100%;
+    background: grey;
+    margin-right: 10px;
+}
+#main2{
+    flex: 5;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    padding: 0px;
+}
+.top{
+    background: grey;
+    height: 40%;
+    margin-bottom: 10px;
+}
+.bottom{
+    background: grey;
+    height: 60%;
+    margin-top: 10px;
+}
+.foot{
+    width: 96.5%;
+    background: grey;
+    margin-top: 20px;
+}

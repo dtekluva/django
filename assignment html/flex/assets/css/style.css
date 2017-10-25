@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+}
+.ref{
+    
+    width: 1000px;
+    background: rgb(255, 255, 255);
+    justify-content: space-around;
+    margin-top: 1%;
+    
+}
+.tophold{
+    background: rgb(175, 175, 175);
+    height: 100px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.holder1{
+    background: rgb(175, 175, 175);
+    height: 200px;
+    margin: 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.holder2{
+    height: 70px;
+    margin: 10px 0;
+    display: flex;
+
+}
+#sect{
+    flex: 1;
+    justify-content: space-around;
+    width: 20%;
+    background:rgb(175, 175, 175);
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectsp{
+    flex: 1;
+    justify-content: space-around;
+    width: 20%;
+    background: rgb(172, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.holder3{
+    height: 500px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.holder4{
+    background: rgb(172, 172, 172);
+    height: 150px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.holder3child{
+    flex: 5;
+    background:rgb(175, 175, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.holder3child2{
+    flex: 4;
+    margin-left: 3%;
+}
+.floaters{
+    height: 35%;
+    width: 100%;
+    margin-bottom:7%;
+    background: rgb(173, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.floater1{
+    height: 58%;
+    width: 100%;
+    background: rgb(175, 175, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

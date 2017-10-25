@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:rgb(255, 255, 255);
+    
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+.ref{
+    width: 980px;
+    background: red;
+    margin: 5% 0;
+}
+
+.contain{
+    float: left;
+    width: calc(100%/4);
+    background:rgb(255, 255, 255);
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.contain div{
+    background: blue;
+    height: 220px;
+}
+
+[class*='col-']{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container1:after,
+.container1:before{
+    display: table;
+    content: '';
+    clear: both;
+    
+}
