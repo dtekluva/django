@@ -5,6 +5,10 @@ from django.core.urlresolvers import reverse
 from django.contrib import messages
 from django.contrib.auth.models import User
 from useraccount.models import UserAccount
+
+from useraccount.forms import Loginform
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def indexView(request):
@@ -49,10 +53,40 @@ def signupView(request):
 
 
 def loginView(request):
-    return HttpResponse("You are at, The login module")
+    login_form=Loginform()
+    if request.method == "POST":
+        login_form  =   Loginform(data = request.POST)
+        if login_form.is_valid():
+            check_user = User.objects.filter(email =   request.POST['email'])
+            if check_user.exists():
+                username    =   check_user[0].username
+
+                #authenticate_user
+                auth_user   =   authenticate( username = username, password = request.POST['password'])
+                if auth_user is not None:
+                    login(request, auth_user)
+                    return redirect(reverse('blog:create-post'))
+                else:
+                    messages.warning(request, "The details you supplied are incorrect")
+                    return redirect(reverse('useraccount:login'))
+            else:
+                messages.info(request, " we could not  find your email in our database")
+                return redirect(reverse('useraccount:login'))
+
+        #else:
+            #print("------------------form  errors-------------", forms.errors)
+
+    return render(request, 'useraccount/login.html', {'login_form':login_form})
+
+
 
 def forgotPassswordView(request):
     return HttpResponse("You are at, The forgotpassword module")
 
 def resetPasswordView(request):
     return HttpResponse("You are at, The resetpassword module")
+
+def logoutView(request):
+    if User.is_authenticated:
+        logout(request)
+    return redirect(reverse('blog:blog'))

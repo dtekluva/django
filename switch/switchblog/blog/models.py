@@ -13,7 +13,7 @@ class PostImage(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=255)
     body = models.CharField(max_length=2000)
-    posted_by = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+    posted_by = models.ForeignKey(UserAccount, on_delete=models.CASCADE, null = True)
     date_posted = models.DateTimeField(auto_now=True)
     category = models.CharField(max_length=125, choices=CATEGORY)
     is_fetched = models.BooleanField(default=False)

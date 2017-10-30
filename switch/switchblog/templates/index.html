@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} This is a blog index page {% endblock title %}
+
+{% block inner_content %}
+    <div>
+        <a href="{% url 'blog:create-post' %}" class="btn btn-primary">Create New Post</a>
+        <h5>This is the inner content of the blog index page </h5>
+    </div>
+{% endblock inner_content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Create Blog Post {% endblock title %}
+
+{% block inner_content %}
+    <form class="west" method="post" action="{% url 'blog:create-post' %}" enctype="multipart/form-data"> 
+        {% csrf_token %}
+        {{ article_form.as_p }}
+        <input type="file" name="post_image" placeholder="select_image"/>
+        <input type="submit" value="Submit Article" class="btn btn-success" name="submit"/>
+        
+    </form>
+{% endblock inner_content %}

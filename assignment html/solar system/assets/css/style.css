@@ -1,0 +1,472 @@
+{
+    box-sizing: border-box;
+}
+body{
+    
+    /*reset*/
+    background-image : url('../../assets/img/galaxy.jpg');
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+div{
+    margin: auto;
+}
+.contain{
+    height: 10000px;
+    width: 100%;
+    margin: 200px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: rgb(5, 5, 5);
+    animation: fade 5s ease  alternate infinite;
+    
+}
+.cosmos{
+    height: 1600px;
+    width: 1600px;
+    padding:300px;
+    margin: auto;
+    display: flex;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.pluto{
+    background-image: url('../../assets/img/pluto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 1900px;
+    top: 800px;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.neptune{
+    background-image: url('../../assets/img/neptune.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1500px;
+    left: 1700px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.jupiter{
+    background-image: url('../../assets/img/jupiter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1000px;
+    left:700px;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius: 100%;
+    animation: spin3 10s ease  alternate infinite;
+}
+.saturn{
+    background-image: url('../../assets/img/saturn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 550px;
+    left: 945px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.mars{
+    background-image: url('../../assets/img/mars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1100px;
+    left: 1400px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.earth{
+    background-image: url('../../assets/img/earth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1356px;
+    left: 1148px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.venus{
+    background-image: url('../../assets/img/venus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 881px;
+    left: 1143px;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    border-radius: 100%;
+    animation: spin2 10s ease  alternate infinite;
+}
+.mecury{
+    background-image: url('../../assets/img/mecury.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1020px;
+    left: 1234px;
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border-radius: 100%;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.sun{
+    background-image: url('../../assets/img/sun.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin: auto;
+    width: 250px;
+    background-size: cover;
+    border-radius: 100%;
+    animation: spin 8s linear reverse infinite;
+ 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+        
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@keyframes spin2 {
+    from {
+        transform:rotate(0deg);
+        transform: translateX(500px);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spin3 {
+    from {
+        transform:rotate(0deg);
+        transform: translateX(-300px);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@keyframes fade {
+    from {
+        background-color: rgba(0, 0, 0, 0.568);
+        
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(5);
+    }
+}
+
+
+/*
+.pluto{
+    height: 1000px;
+    width: 1000px;
+    background-size: cover;
+    border-radius: 100%;
+    
+    position: relative; 
+    animation-name: spin;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin: auto;
+    left: 20%;
+}
+.neptune{
+    height: 875px;
+    width: 875px;
+    background-size: cover;
+  
+    position: fixed; 
+    animation-name: spin;
+    
+    animation-duration: 900000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin : auto;
+    left: 20%;
+}
+
+.uranus{
+height: 750px;
+width: 750px;
+left: 20%;
+background-size: cover;
+border-radius: 100%;
+border: thin;
+border-color: yellow;
+position: fixed; 
+animation-name: spin;
+animation-duration: 900000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+margin: auto;
+    }
+.saturn{
+    height: 625px;
+    width: 625px;
+    background-size: cover;
+    border-radius: 100%;
+    border: thin;
+    border-color: rgb(223, 255, 39);
+    position: fixed; 
+    animation-name: spin;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin: auto;
+    }
+.jupiter{
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    border-radius: 100%;
+    border: thin;
+    border-color: rgb(223, 255, 39);
+    position: fixed; 
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin: auto;
+    left: 20%;
+    }
+.mars{
+    height: 375px;
+    width: 375px;
+    background-size: cover;
+    border-radius: 100%;
+    border: thin;
+    border-color: rgb(223, 255, 39);
+    position: fixed; 
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin: auto;
+    left: 20%;
+    }
+.earth{
+    height: 225px;
+    width: 225px;
+    background-size: cover;
+    border-radius: 100%;
+    border: thin;
+    border-color: rgb(223, 255, 39);
+    position: fixed; 
+    animation-name: spin;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin: auto;
+    left: 20%;
+    }
+.venus{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+    border: thin;
+    border-color: rgb(223, 255, 39);
+    position: fixed; 
+    animation-name: spin;
+    animation-duration: 150000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    margin: auto;
+    left: 20%;
+    }
+
+
+.sun{
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    border-radius: 100%;
+    background-image: url('../../assets/img/Sun.png');
+    animation: spin 5s ease reverse infinite; 
+}
+
+.plutop{
+    background-image: url('../../assets/img/pluto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.neptunep{
+    background-image: url('../../assets/img/neptune.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-300px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.uranusp{
+    background-image: url('../../assets/img/uranus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.saturnp{
+    background-image: url('../../assets/img/saturn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.jupiterp{
+    background-image: url('../../assets/img/jupiter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.marsp{
+    background-image: url('../../assets/img/mars.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.earthp{
+    background-image: url('../../assets/img/mars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.mecuryp{
+    background-image: url('../../assets/img/mecury.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-200px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.venusp {
+    background-image: url('../../assets/img/venus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:-150px;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 100%;
+}
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+  */
+ 

@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My First WebApp | Signup</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %} Switch blog | sign up {% endblock title %}
+{% block inner_content %}
     <form action="{% url 'useraccount:sign_up' %}" method="post">
             {% csrf_token %}
             {{user_form.as_p}}
@@ -15,5 +10,4 @@
             <input type="submit" name="submit" value="Sign up">
     </form>
     
-</body>
-</html>
+{% endblock inner_content %}
