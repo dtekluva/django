@@ -9,6 +9,11 @@
     </head>
 
     <body>
+        <header>
+            <ul>
+                <li class="logo"><h1>Rango</h1></li>
+            </ul> 
+        </header>
         <h1>
             Rango man says...click ther button below to visit lorem
         </h1>
@@ -16,7 +21,15 @@
         <button>
             <a href="/rango/lorem/">LOREM</a>
         </button>
-
+        {% if categories %}
+        <ul>
+            {% for category in categories %}
+            <li><span><a href="/rango/category/{{ category.slug }}">{{ category.name }}</a></span><span>  -views - {{ category.views }}</span> <ul><li>  -likes - {{ category.likes }}</li></ul></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <strong>There are no categories present.</strong>
+    {% endif %}
         hello world! <strong>{{ boldmessage }}</strong><br />
         <img src="{% static "/rango/images/rango.jpg" %}" alt="Picture of Rango" />
         <a href="/rango/about/">About</a><br />
